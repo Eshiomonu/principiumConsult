@@ -14,12 +14,12 @@
       <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
 
       <div class="container d-flex flex-column align-items-center">
-        <h2 data-aos="fade-up" data-aos-delay="100">LEADERSHIP. OBJECTIVITY. PRODUCTIVITY</h2>
-        <p data-aos="fade-up" data-aos-delay="200">We are team of talented consultants and trainers</p>
-        <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+        <h2 data-aos="fade-up" data-aos-delay="100">Welcome to Principium Consult Ltd</h2>
+        <p data-aos="fade-up" data-aos-delay="200">Empowering Leadership | Driving Innovation | Building Careers</p>
+        <!-- <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
           <a href="contact.html" class="btn-get-started">Book an Appointment</a>
-          <!-- <a href="#" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
-        </div>
+          <a href="#" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+        </div> -->
       </div>
 
     </section><!-- /Hero Section -->
@@ -127,32 +127,30 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
-        <p class="align-items-center">We provide comprehensive services to support the commencement and continuation of operations, including:<br></p>
+        <p class="align-items-center">From executive training to job outsourcing and IT bootcamps, we offer practical transformation programs.</p>
+        </p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-5">
 
-          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="col-xl-6 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services/sustainable.jpg" class="img-fluid" alt="Sustainable Strategy Development">
+                <img src="assets/img/services/leadership_training.jpg" class="img-fluid" alt="Sustainable Strategy Development">
               </div>
               <div class="details position-relative">
-                <!-- <div class="icon">
-                  <i class="bi bi-activity"></i>
-                </div> -->
                 <a href="service-details.html" class="stretched-link">
-                  <h3>Sustainable Strategy Development </h3>
+                  <h3>Executive Training & Leadership </h3>
                 </a>
-                <p>At Principium Consults Ltd, we handle development of eco-friendly and socially responsible business plans, comprehensive sustainability audits and implementation of green technologies and practices.
+                <p>Leadership development workshops, Corporate retreats, Executive coaching
                 </p>
               </div>
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+          <div class="col-xl-6 col-md-6" data-aos="zoom-in" data-aos-delay="300">
             <div class="service-item">
               <div class="img">
                 <img src="assets/img/services/teaching.jpg" class="img-fluid" alt="HUMAN RESOURCE MANAGEMENT">
@@ -160,36 +158,37 @@
               <div class="details position-relative">
 
                 <a href="service-details.html" class="stretched-link">
-                  <h3>Principled Leadership Training</h3>
+                  <h3>IT Bootcamps & Consultancy</h3>
                 </a>
-                <p>At Principium, we manage coaching for executives,managers & staffs, leadership development programs emphasizing ethical decision-making and workshops on inclusive and value-driven leadership.
+                <p>Full-stack development, Cybersecurity, Data analytics, Cloud computing
 
                 </p>
               </div>
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-            <div class="service-item">
-              <div class="img">
-                <img src="assets/img/services/leadership_training.jpg" class="img-fluid" alt="HOTEL & HOSPITALITY TRAINING">
-              </div>
-              <div class="details position-relative">
-
-                <a href="service-details.html" class="stretched-link">
-                  <h3>Operational Excellence Consulting</h3>
-                </a>
-                <p> At Principium consults, we manage process optimization and resource efficiency, cost-reduction strategies aligned with sustainability goals and change management support for new initiatives.
-                </p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
 
         </div>
 
         <div class="row gy-5">
 
-          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="col-xl-6 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="service-item">
+              <div class="img">
+                <img src="assets/img/services/market.jpg" class="img-fluid" alt="HOTEL & HOSPITALITY TRAINING">
+              </div>
+              <div class="details position-relative">
+
+                <a href="service-details.html" class="stretched-link">
+                  <h3>Job Outsourcing & Recruitment</h3>
+                </a>
+                <p> Talent sourcing, Staff augmentation, Outsourcing services
+                </p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-6 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="service-item">
               <div class="img">
                 <img src="assets/img/services/academy.jpg" class="img-fluid" alt="Specialized Training Academy">
@@ -199,44 +198,14 @@
                   <i class="bi bi-activity"></i>
                 </div> -->
                 <a href="service-details.html" class="stretched-link">
-                  <h3>Specialized Training Academy </h3>
+                  <h3>Principium Academy </h3>
                 </a>
-                <p>At Principium consults, we give tailored sessions based on industry and organizational needs, Training materials, workshops, and e-learning modules.</p>
+                <p>Certification programs, Career acceleration, Job placement</p>
               </div>
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-            <div class="service-item">
-              <div class="img">
-                <img src="assets/img/services/market.jpg" class="img-fluid" alt="Market Research and Industry Analysis">
-              </div>
-              <div class="details position-relative">
 
-                <a href="service-details.html" class="stretched-link">
-                  <h3>Market Research and Industry Analysis</h3>
-                </a>
-                <p>At Principium consults, we provide competitive analysis and benchmarking and Insights on emerging trends in sustainability and leadership.
-                </p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-            <div class="service-item">
-              <div class="img">
-                <img src="assets/img/HOTEL & HOSPITALITY TRAINING.jpg" class="img-fluid" alt="HOTEL & HOSPITALITY TRAINING">
-              </div>
-              <div class="details position-relative">
-
-                <a href="service-details.html" class="stretched-link">
-                  <h3>Jobs and Outsourcing Services</h3>
-                </a>
-                <p>Strategies for building trust through ethical practices and communication plans for sustainability and leadership initiatives.
-                </p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
 
         </div>
 
