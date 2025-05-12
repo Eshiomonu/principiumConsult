@@ -1,4 +1,7 @@
-<?php include('./includes/meta.php') ?>
+<?php
+include('./includes/meta.php');
+include './includes/config.php';
+?>
 
 <body class="index-page">
 
@@ -16,10 +19,6 @@
       <div class="container d-flex flex-column align-items-center">
         <h2 data-aos="fade-up" data-aos-delay="100">Welcome to Principium Consult Ltd</h2>
         <p data-aos="fade-up" data-aos-delay="200">Empowering Leadership | Driving Innovation | Building Careers</p>
-        <!-- <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-          <a href="contact.html" class="btn-get-started">Book an Appointment</a>
-          <a href="#" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
-        </div> -->
       </div>
 
     </section><!-- /Hero Section -->
@@ -88,7 +87,7 @@
           <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
 
             <img src="assets/img/logo.jpg" class="img-fluid rounded-4 mb-4" alt="">
-            <div class="content ps-0 ps-lg-5">
+            <!-- <div class="content ps-0 ps-lg-5">
               <h5>Our Value-Driven Approach</h5>
               <ul>
                 <li><i class="bi bi-check-circle-fill"></i> <span>Enhanced guest experiences and a stronger brand identity.</span></li>
@@ -96,7 +95,7 @@
                 <li><i class="bi bi-check-circle-fill"></i> <span>Maximized returns for investors.</span></li>
                 <li><i class="bi bi-check-circle-fill"></i> <span>Greater appeal to travelers, boosting your hotel’s and destination’s visibility.</span></li>
               </ul>
-            </div>
+            </div> -->
           </div>
           <div class="col-lg-7" data-aos="fade-up" data-aos-delay="250">
 
@@ -406,42 +405,7 @@
       </div>
     </section>
 
-    <!-- Clients Section -->
-    <section id="clients" class="clients section light-background">
 
-      <div class="container" data-aos="fade-up">
-
-        <div class="row gy-4">
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/exclusive_serene_logo.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/Fraser_suites_Logo.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/Hawthorn_Suites_Logo.jpeg.jpg" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/Jaswill.jpg" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/Wells_Carlton_Logo.png" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-          <div class="col-xl-2 col-md-3 col-6 client-logo">
-            <img src="assets/img/clients/lafred.PNG" class="img-fluid" alt="">
-          </div><!-- End Client Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Clients Section -->
   </main>
 
   <!-- Footer section -->

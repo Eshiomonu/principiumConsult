@@ -242,6 +242,81 @@
       </div>
 
     </section><!-- /Clients Section -->
+
+    <!-- ...existing code remains unchanged... -->
+
+    <!-- File: contact.php -->
+    <?php include 'includes/header.php'; ?>
+    <?php
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+      include 'includes/db.php';
+      $name = mysqli_real_escape_string($conn, $_POST['name']);
+      $email = mysqli_real_escape_string($conn, $_POST['email']);
+      $message = mysqli_real_escape_string($conn, $_POST['message']);
+      mysqli_query($conn, "INSERT INTO contact_messages (name, email, message) VALUES ('$name', '$email', '$message')");
+      echo "<div class='alert alert-success'>Message sent successfully.</div>";
+    }
+    ?>
+    <div class="container py-5">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <form method="POST">
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" class="form-control" name="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" name="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </div>
+    <?php include 'includes/footer.php'; ?>
+
+    <!-- Newsletter Signup (Include in footer or homepage) -->
+    <form method="POST" class="bg-light p-4 mt-5" style="max-width: 600px; margin: auto;">
+      <h5>Subscribe to our Newsletter</h5>
+      <?php
+      if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['newsletter_email'])) {
+        include 'includes/db.php';
+        $email = mysqli_real_escape_string($conn, $_POST['newsletter_email']);
+        mysqli_query($conn, "INSERT INTO newsletter (email) VALUES ('$email')");
+        echo "<div class='alert alert-success'>Subscribed successfully.</div>";
+      }
+      ?>
+      <div class="input-group">
+        <input type="email" name="newsletter_email" class="form-control" placeholder="Enter your email" required>
+        <button class="btn btn-success" type="submit">Subscribe</button>
+      </div>
+    </form>
+
+    <!-- Customer Logos Carousel (Include on homepage) -->
+    <div class="container py-5">
+      <h3 class="text-center">Trusted By</h3>
+      <div id="customerCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-around">
+              <img src="images/client1.png" alt="Client 1" style="height: 80px;">
+              <img src="images/client2.png" alt="Client 2" style="height: 80px;">
+              <img src="images/client3.png" alt="Client 3" style="height: 80px;">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-around">
+              <img src="images/client4.png" alt="Client 4" style="height: 80px;">
+              <img src="images/client5.png" alt="Client 5" style="height: 80px;">
+              <img src="images/client6.png" alt="Client 6" style="height: 80px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </main>
 
   <!-- Footer section -->

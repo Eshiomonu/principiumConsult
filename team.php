@@ -15,7 +15,47 @@
       </div>
     </section><!-- End Section Title -->
 
+    <!-- About Section -->
+    <section id="about" class="about section light-background">
 
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
+
+            <img src="assets/img/logo.jpg" class="img-fluid rounded-4 mb-4" alt="">
+
+          </div>
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="250">
+
+            <div class="content ps-0 ps-lg-5">
+              <h2>About Principium Consults Ltd</h2>
+              <p>
+                Principium consult specializes in creating sustainable strategies and fostering principled leadership to ensure long-term success for business owners. We aim to transform dreams into realities within the education, hospitality, and real estate sectors. By leveraging expertise in sustainability, leadership, and strategic planning, we provide innovative solutions that empower businesses to thrive in a competitive environment while maintaining their core values.
+              </p>
+              <p>
+                Principium consult is committed to driving transformation and long-term success through principled leadership and sustainability. With a robust service portfolio, tailored training programs, and a focus on impactful outcomes, we are poised to become a trusted partner for businesses in the education, hospitality, and real estate sectors.
+                Hence, our slogan: <span class="fst-italic " style="color: #ff4a17; font-weight:bolder">"Adding Value and Getting Value in Return."</span>
+              </p>
+
+              <div class="content ps-0 ps-lg-5">
+                <h5>Our Value-Driven Approach</h5>
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i> <span>Enhanced guest experiences and a stronger brand identity.</span></li>
+                  <li><i class="bi bi-check-circle-fill"></i> <span>Increased value for property owners.</span></li>
+                  <li><i class="bi bi-check-circle-fill"></i> <span>Maximized returns for investors.</span></li>
+                  <li><i class="bi bi-check-circle-fill"></i> <span>Greater appeal to travelers, boosting your hotel’s and destination’s visibility.</span></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
 
     <!-- Team Section -->
     <section id="team" class="team section light-background">
