@@ -360,10 +360,51 @@
         </div>
 
       </div>
+      <div class="container py-5">
+        <h2 class="text-center mb-4">Video Portfolio</h2>
+        <div class="row">
+          <?php
+          $videos = glob("uploads/videos/*.{mp4,webm,ogg}", GLOB_BRACE);
+          foreach ($videos as $video):
+          ?>
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <video controls width="100%">
+                  <source src="<?= $video ?>" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          <?php endforeach; ?>
+        </div>
+      </div>
 
     </section>
     <!-- /Portfolio Section -->
 
+
+    <!-- Blog Preview -->
+    <section class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Latest Blog Posts</h2>
+        <div class="row">
+          <?php
+          $query = "SELECT * FROM blog_posts ORDER BY created_at DESC LIMIT 3";
+          $result = mysqli_query($conn, $query);
+          while ($row = mysqli_fetch_assoc($result)) {
+            echo '<div class="col-md-4 mb-3">';
+            echo '<div class="card">';
+            echo '<img src="uploads/blogs/' . $row['image'] . '" class="card-img-top">';
+            echo '<div class="card-body">';
+            echo '<h5 class="card-title">' . $row['title'] . '</h5>';
+            echo '<p class="card-text">' . substr($row['content'], 0, 100) . '...</p>';
+            echo '<a href="blog/post.php?id=' . $row['id'] . '" class="btn btn-primary">Read More</a>';
+            echo '</div></div></div>';
+          }
+          ?>
+        </div>
+      </div>
+    </section>
 
     <!-- Clients Section -->
     <section id="clients" class="clients section light-background">
