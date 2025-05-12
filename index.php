@@ -357,10 +357,6 @@ include './includes/config.php';
 
 
         </div>
-
-      </div>
-      <div class="container py-5">
-        <h2 class="text-center mb-4">Video Portfolio</h2>
         <div class="row">
           <?php
           $videos = glob("uploads/videos/*.{mp4,webm,ogg}", GLOB_BRACE);
@@ -376,7 +372,9 @@ include './includes/config.php';
             </div>
           <?php endforeach; ?>
         </div>
+
       </div>
+
 
     </section>
     <!-- /Portfolio Section -->
@@ -388,7 +386,7 @@ include './includes/config.php';
         <h2 class="text-center mb-4">Latest Blog Posts</h2>
         <div class="row">
           <?php
-          $query = "SELECT * FROM blog_posts ORDER BY created_at DESC LIMIT 3";
+          $query = "SELECT * FROM blogs ORDER BY created_at DESC LIMIT 3";
           $result = mysqli_query($conn, $query);
           while ($row = mysqli_fetch_assoc($result)) {
             echo '<div class="col-md-4 mb-3">';

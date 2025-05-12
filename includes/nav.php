@@ -19,6 +19,7 @@
           </ul>
         </li>
         <li><a href="academy.php">Academy</a></li>
+        <li><a href="gallery.php">Gallery</a></li>
         <li><a href="blog.php">Blog</a></li>
         <li><a href="./contact.php" class="cta-btn">Contact</a></li>
       </ul>
