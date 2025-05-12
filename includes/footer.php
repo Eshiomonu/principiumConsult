@@ -34,6 +34,7 @@
       </div>
 
     </section><!-- /Clients Section -->
+
     <footer id="footer" class="footer dark-background">
 
       <div class="container footer-top">
@@ -80,26 +81,24 @@
             </div>
           </div>
 
-          <!-- <div class="col-lg-2 col-md-3 footer-links">
-        <h4>Useful Links</h4>
-        <ul>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
-        </ul>
-      </div> -->
-
           <div class="col-lg-3 col-md-12 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-            <form action="forms/newsletter.php" method="post" class="php-email-form">
-              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+            <form method="POST" class="php-email-form">
+              <h5>Subscribe to our Newsletter</h5>
+              <?php
+              if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['newsletter_email'])) {
+                include 'includes/db.php';
+                $email = mysqli_real_escape_string($conn, $_POST['newsletter_email']);
+                mysqli_query($conn, "INSERT INTO newsletter (email) VALUES ('$email')");
+                echo "<div class='alert alert-success'>Subscribed successfully.</div>";
+              }
+              ?>
+              <div class="newsletter-form">
+
+                <input type="email" name="newsletter_email" placeholder="Enter your email" required>
+                <input type="submit" value="Subscribe">
+              </div>
             </form>
+
           </div>
 
         </div>

@@ -20,12 +20,12 @@
         </li>
         <li><a href="academy.php">Academy</a></li>
         <li><a href="blog.php">Blog</a></li>
-        <li><a href="./contact.php">Contact</a></li>
+        <li><a href="./contact.php" class="cta-btn">Contact</a></li>
       </ul>
       <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
     </nav>
 
-    <a class="cta-btn" href="./contact.php">Get Started</a>
+    <!-- <a class="cta-btn" href="./contact.php">Get Started</a> -->
 
   </div>
 </header>
